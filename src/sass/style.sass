@@ -1,0 +1,53 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans)
+
+@import 'font-awesome'
+@import 'bourbon'
+@import 'neat'
+
+body
+	font-family: "Open Sans"
+
+.left
+	float: left
+.right
+	float: right
+.clear
+	clear: both
+.bold
+	font-weight: bold
+
+#ui
+	> *
+		position: absolute
+		width: 100%
+		height: 50%
+		left: 0px
+	#inc-exp
+		top: 0px
+		> *
+			position: absolute
+			width: 50%
+			padding: 10px
+			box-sizing: border-box
+			h2
+				margin: 0px
+				padding: 0px
+				font-size: 1.2em
+		#income, #expenses
+			left: 0px
+			ul
+				margin: 0px
+				padding: 0px
+				list-style: none
+				li
+					margin: 0px
+					padding: 0px
+		#income
+			top: 0px
+		#expenses
+			top: 50%
+		#statement
+			top: 0px
+			left: 50%
+	#balance-sheet
+		top: 50%
